@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/07/19/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>卷首语</title>
+    <url>/2023/07/19/%E5%8D%B7%E9%A6%96%E8%AF%AD/</url>
+    <content><![CDATA[<p>本博客创建于2023年7月19日上午，</p>
+<p>我是根据B站UP主<a href="https://space.bilibili.com/270875564">DID迪</a>的视频《[教程]Hexo &amp; Github搭建自己的专属博客》来搭建本博客的，</p>
+<p>本博客使用了Hexo的NexT主题，</p>
+<p>本博客的NexT主题的美化是根据B站UP<a href="https://space.bilibili.com/15289301">Mackxin</a>的视频《[馨客栈分享]使用Hexo博客搭建的个人博客，使用Next主题来进行优化改造》来的</p>
+<blockquote>
+<p>视频链接</p>
+<p>【[教程]Hexo &amp; Github搭建自己的专属博客】 <a href="https://www.bilibili.com/video/BV1Eg41157tL/?share_source=copy_web&vd_source=a588b30b1c8de1d716699b8ae558538f">https://www.bilibili.com/video/BV1Eg41157tL/?share_source=copy_web&amp;vd_source=a588b30b1c8de1d716699b8ae558538f</a></p>
+<p>【[馨客栈分享]使用Hexo博客搭建的个人博客，使用Next主题来进行优化改造】 <a href="https://www.bilibili.com/video/BV16W411t7mq/?p=5&share_source=copy_web&vd_source=a588b30b1c8de1d716699b8ae558538f">https://www.bilibili.com/video/BV16W411t7mq/?p=5&amp;share_source=copy_web&amp;vd_source=a588b30b1c8de1d716699b8ae558538f</a></p>
+</blockquote>
+<blockquote>
+<p>Hexo官网</p>
+<p><a href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a></p>
+</blockquote>
+<blockquote>
+<p>Next官网</p>
+<p><a href="http://theme-next.iissnan.com/">NexT 使用文档 (iissnan.com)</a></p>
+<p>Next使用教程</p>
+<p><a href="http://theme-next.iissnan.com/getting-started.html">开始使用 - NexT 使用文档 (iissnan.com)</a></p>
+</blockquote>
+<p>在这里要感谢DID迪、Mackxin、Hexo和GitHub，</p>
+<p>没有他们的帮助，我无法轻松的创建这个个人博客网站</p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Linux的时间函数</title>
+    <url>/2023/07/19/Linux%E7%9A%84%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>本篇文章始于2023年7月19日下午</p>
+<h3 id="time"><a href="#time" class="headerlink" title="time"></a>time</h3><h5 id="函数原型"><a href="#函数原型" class="headerlink" title="函数原型"></a>函数原型</h5><p>获取自 1970 年 1月 1 日早晨零点到现在的秒数，也叫做</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">time_t</span> <span class="title">time</span><span class="params">(<span class="type">time_t</span> *timep)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<h5 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h5><p>如果time函数的参数timep为NULL，那么time函数会返回自 1970 年 1月 1 日早晨零点到现在的秒数；</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">time_t</span> tm;</span><br><span class="line">    tm=<span class="built_in">time</span>(<span class="literal">NULL</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,tm);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果time函数的参数不为NULL，那么time函数会把自 1970 年 1月 1 日早晨零点到现在的秒数赋值给timep指向的time_t类型变量</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">time_t</span> tm;</span><br><span class="line">    <span class="built_in">time</span>(&amp;tm);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,tm);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>建议使用time(NULL)，因为这样可以减少出错的可能性，并且使用起来更简单</p>
+<h3 id="ctime"><a href="#ctime" class="headerlink" title="ctime"></a>ctime</h3><h5 id="函数原型-1"><a href="#函数原型-1" class="headerlink" title="函数原型"></a>函数原型</h5><p>将time_t转换成可打印格式，所谓可打印格式类似于“Wed Jul 19 01:59:16 2023”</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">char</span> *<span class="title">ctime</span><span class="params">(<span class="type">const</span> <span class="type">time_t</span> *timep)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<h5 id="使用方法-1"><a href="#使用方法-1" class="headerlink" title="使用方法"></a>使用方法</h5><p>把一个指向 time_t 的指针作为 timep 参数传入函数 ctime()，将返回一个长达 26 字节的字符串，内含标准格式的日期和时间</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;time.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">time_t</span> current_time;</span><br><span class="line">    <span class="built_in">time</span>(&amp;current_time);</span><br><span class="line">    </span><br><span class="line">    <span class="type">char</span>* time_str = <span class="built_in">ctime</span>(&amp;current_time);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Current time: %s&quot;</span>, time_str);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="疑惑"><a href="#疑惑" class="headerlink" title="疑惑"></a>疑惑</h5><p>为什么ctime函数要用一个指针作为参数，这样不是很麻烦吗？</p>
+<p>这是因为<code>ctime</code>函数需要修改一个静态缓冲区中的内容，并返回指向该缓冲区的指针。这个缓冲区包含了一个字符串表示的时间。通过将时间的指针传递给<code>ctime</code>函数，函数可以直接在缓冲区中进行修改，然后返回指向缓冲区的指针，以便用户可以使用这个字符串。</p>
+<p>也就是说，通过用指针作为参数，ctime函数就不需要拷贝一份time_t，再根据这副本来修改静态缓冲区的内容，而是可以直接通过指针找到time_t来修改静态缓冲区的内容。这样可以节省内存空间和提高运行效率。</p>
+<p>需要注意的是，<code>ctime</code>函数在每次调用时都会使用同一个静态缓冲区，因此如果多次调用<code>ctime</code>函数，后续的调用会覆盖前面调用的结果。如果需要保存多个时间字符串，可以使用<code>localtime</code>或<code>gmtime</code>函数进行转换，并使用不同的缓冲区来存储结果。</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>无穷小和无穷大</title>
+    <url>/2023/07/19/%E6%97%A0%E7%A9%B7%E5%B0%8F%E5%92%8C%E6%97%A0%E7%A9%B7%E5%A4%A7/</url>
+    <content><![CDATA[<p>本文章始于2023年7月19日下午</p>
+<h2 id="（一）无穷小"><a href="#（一）无穷小" class="headerlink" title="（一）无穷小"></a>（一）无穷小</h2><h3 id="1、无穷小的概念"><a href="#1、无穷小的概念" class="headerlink" title="1、无穷小的概念"></a>1、无穷小的概念</h3><p>若函数$ f(x) $当$ x \rightarrow x_0 $(或$ x \rightarrow ∞) $时的极限为零，则称$ f(x) $为$ x \rightarrow x_0 $或$ x \rightarrow ∞ $时的无穷小量</p>
+<p>注：以0为极限的变量称为无穷小量；提到无穷小量，必须指明极限过程</p>
+<p>我感觉在无穷小量和无穷大量这部分内容中，无穷小量是重点，因为无穷小量的内容要比无穷大量多许多</p>
+<h3 id="2、无穷小的性质"><a href="#2、无穷小的性质" class="headerlink" title="2、无穷小的性质"></a>2、无穷小的性质</h3><p>（1）有限个无穷小的和仍是无穷小</p>
+<p>（2）有效个无穷小的积仍是无穷小</p>
+<p>（3）无穷小量与有界量的积仍是无穷小</p>
+<p>注：两个无穷小的商不一定是无穷小,有多种不同的情况</p>
+<p>$\displaystyle \lim_{x \to 0}{\frac{x^2}{3x}}&#x3D;0$，$\displaystyle \lim_{x \to 0}{\frac{3x}{x^2}}&#x3D;\infty$，$\displaystyle \lim_{x \to 0}{\frac{\sin x}{3x}}&#x3D;\frac{1}{3}$</p>
+<blockquote>
+<p>为什么两个无穷小的商不一定是无穷小？</p>
+<p>在数学中，无穷小是指无限接近于零的量。当我们讨论两个无穷小的商时，并不一定能得到无穷小的结果。这是因为无穷小的性质取决于它们的增长率。</p>
+<p>如果两个无穷小的增长率相同，那么它们的商可能是无穷小。例如，如果无穷小 a 和无穷小 b 都以相同的速度趋近于零，那么它们的商 a&#x2F;b 可能是无穷小。</p>
+<p>但是，如果两个无穷小的增长率不同，它们的商就不一定是无穷小。例如，如果无穷小 a 的增长率比无穷小 b 更快，那么它们的商 a&#x2F;b 可能不是无穷小，而是趋近于某个有限的非零值。</p>
+<p>因此，两个无穷小的商是否是无穷小，取决于它们各自的增长率。如果增长率相同，可能是无穷小；如果增长率不同，可能是有限的非零值。</p>
+<p>为了更好的说明这点，可以用python代码来举一个实际的例子</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;<span class="comment"># 例子1</span></span><br><span class="line">&gt;n = <span class="number">1000</span></span><br><span class="line">&gt;a = <span class="number">1</span> / n</span><br><span class="line">&gt;b = <span class="number">1</span> / n**<span class="number">2</span></span><br><span class="line">&gt;result = a / b</span><br><span class="line">&gt;<span class="built_in">print</span>(result)  <span class="comment"># 输出：1000</span></span><br><span class="line">&gt;<span class="comment"># 例子2</span></span><br><span class="line">&gt;n = <span class="number">1000</span></span><br><span class="line">&gt;a = <span class="number">1</span> / n</span><br><span class="line">&gt;b = <span class="number">2</span> / n</span><br><span class="line">&gt;result = a / b</span><br><span class="line">&gt;<span class="built_in">print</span>(result)  <span class="comment"># 输出：0.5</span></span><br></pre></td></tr></table></figure>
+
+<p>在第一个例子中，我们选择 n 的值为 1000，然后计算 a 和 b。最后，我们计算 a&#x2F;b 的商并打印结果。你会发现，结果是 1000，而不是无穷小。</p>
+<p>在第二个例子中，我们同样选择 n 的值为 1000，然后计算 a 和 b。最后，我们计算 a&#x2F;b 的商并打印结果。你会发现，结果是 0.5，一个有限的非零值。</p>
+</blockquote>
+<h3 id="3、无穷小的比较"><a href="#3、无穷小的比较" class="headerlink" title="3、无穷小的比较"></a>3、无穷小的比较</h3><p>如果$\lim \frac{\beta}{\alpha}&#x3D;0$,那么就说β是比α高阶的无穷小，记作β&#x3D;$\omicron(\alpha)$</p>
+<p>如果$ \lim \frac{\beta}{\alpha}&#x3D;∞ $,那么就说β是比α低阶的无穷小</p>
+<p>如果$ \lim \frac{\beta}{\alpha}&#x3D;c \neq 0$,那么就说β和α是同阶无穷小</p>
+<p>如果$\lim \frac{\beta}{\alpha^k}&#x3D;c \neq 0 $,那么就说β是关于α的k阶无穷小</p>
+<p>如果$ \lim \frac{\beta}{\alpha}&#x3D;1 $,那么就说β与α是同阶无穷小，记作$ \beta $ ~ $ \alpha $</p>
+<h3 id="4、无穷小的两个定理"><a href="#4、无穷小的两个定理" class="headerlink" title="4、无穷小的两个定理"></a>4、无穷小的两个定理</h3><p>定理1：$\beta$与$\alpha$是等价无穷小的充分必要条件是$\beta &#x3D; \alpha + \omicron(\alpha)$</p>
+<p>定理2：设$\alpha \sim \widetilde{\alpha},\beta \sim \widetilde{\beta}$，且$\lim \frac{\widetilde{\beta}}{\widetilde{\alpha}}$ 存在，则$\lim \frac{\beta}{\alpha} &#x3D; \lim \frac{\widetilde{\beta}}{\widetilde{\alpha}}$</p>
+<p>定理2表明，求两个无穷小之比的极限时，分子及分母都可用等价无穷小来代替。因此，如果用来代替的无穷小宣德适当的话，就可以使计算简化。</p>
+<blockquote>
+<p>现在我明白为什么要学无穷小量和无穷大量了，因为无穷小量可以使极限的运算得到简化，更具体的说是无穷小量的定理可以使极限的运算得到简化。</p>
+<p>由此，我认为，在学习每一个数学知识的时候，都应该思考这个知识有什么用以及这个知识与其他学过数学知识有什么关联或联系吗？</p>
+</blockquote>
+<h3 id="5、常用的等价无穷小"><a href="#5、常用的等价无穷小" class="headerlink" title="5、常用的等价无穷小"></a>5、常用的等价无穷小</h3><p>为了方便极限的运算，我建议要去记忆一些常见的、常用的等价无穷小</p>
+<p>$\sin x \sim x (x \to 0)$</p>
+<p>$\sqrt[n]{1+x}-1 \sim \frac{1}{n}x (x \to 0)$</p>
+<p>$\tan x \sim x(x \to 0)$</p>
+<p>$\arcsin x \sim x(x \to 0)$</p>
+<p>$1-\cos x \sim \frac{1}{2}x^2(x \to 0)$</p>
+<p>$\arctan x \sim x(x \to 0)$</p>
+<p>$\sec x-1 \sim \frac{x^2}{2}$</p>
+<h3 id="6、无穷小的等价关系的性质"><a href="#6、无穷小的等价关系的性质" class="headerlink" title="6、无穷小的等价关系的性质"></a>6、无穷小的等价关系的性质</h3><p>（1）自反性：$\alpha \sim \alpha$</p>
+<p>（2）对称性：若$\alpha \sim \beta$，则$\beta \sim \alpha$</p>
+<p>（3）传递性：若$\alpha \sim \beta$,$\beta \sim \gamma$,则$\alpha \sim \gamma$</p>
+<h2 id="（二）无穷大"><a href="#（二）无穷大" class="headerlink" title="（二）无穷大"></a>（二）无穷大</h2><h3 id="1、无穷大的概念"><a href="#1、无穷大的概念" class="headerlink" title="1、无穷大的概念"></a>1、无穷大的概念</h3><p>如果当$x \to x_0$（或$x \to ∞$）时，对应的函数值的绝对值$|f(x)|$可以大于预先指定的任何很大的正数M，那么就称函数$f(x)$是当$x \to x_0$（或$x \to ∞$）时的无穷大。</p>
+<p>注意：按函数极限的定义来说，$x \to x_0$（或$x \to ∞$）时的无穷大的函数$f(x)$的极限是不存在的。但为了方便描述函数的这一性态，我们也说“函数的极限是无穷大的”</p>
+<h3 id="2、无穷大的相关定律和定理"><a href="#2、无穷大的相关定律和定理" class="headerlink" title="2、无穷大的相关定律和定理"></a>2、无穷大的相关定律和定理</h3><p>定律：一般来说，如果$\displaystyle \lim_{x \to x_0}f(x)&#x3D;∞ $ ,那么直线$x&#x3D;x_0$是函数$y&#x3D;f(x)$的图形的铅直渐近线</p>
+<p>定理：在自变量的同一变化过程中，如果$f(x)$为无穷大，那么$\frac{1}{f(x)}$为无穷小；反之，如果$f(x)$为无穷小，且$f(x) \neq 0$，那么$\frac{1}{f(x)}$为无穷大</p>
+]]></content>
+      <categories>
+        <category>高等数学</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微机操作系统的发展</title>
+    <url>/2023/07/19/%E5%BE%AE%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%91%E5%B1%95/</url>
+    <content><![CDATA[<p>本文章始于2023年7月19日</p>
+<h4 id="微机操作系统的定义"><a href="#微机操作系统的定义" class="headerlink" title="微机操作系统的定义"></a>微机操作系统的定义</h4><p>配置在微型机上的操作系统称为微机操作系统</p>
+<h4 id="单任务单用户操作系统"><a href="#单任务单用户操作系统" class="headerlink" title="单任务单用户操作系统"></a>单任务单用户操作系统</h4><p>​		一次只能有一个用户，且只能执行一个任务。用户不能同时运行多个程序或任务，当一个任务执行完成后，用户可以选择另一个任务来执行。</p>
+<p>​		这是最简单的微机操作系统。</p>
+<p>​		尽管这种类型的操作系统功能相对有限，但在一些简单的环境中仍然可以满足用户的需求。例如，一些嵌入式系统、个人计算机以及一些特定用途的设备可能会采用单用户单任务操作系统。</p>
+<p>​		这种操作系统最具代表性的是CP&#x2F;M和MS-DOS</p>
+<h5 id="CP-M"><a href="#CP-M" class="headerlink" title="CP&#x2F;M"></a>CP&#x2F;M</h5><p>​		CP&#x2F;M是由Digital Research公司于1975年开发的8位微机操作系统，在8位微机中占据了统治地位。</p>
+<img src="https://images.computerhistory.org/blog-media/cpm_cpm13_screenshot.jpg" alt="Early Digital Research CP/M Source Code | @CHM Blog | Computer History ..." style="zoom:80%;" />
+
+
+
+<h5 id="MS-DOS"><a href="#MS-DOS" class="headerlink" title="MS-DOS"></a>MS-DOS</h5><p>​		MS-DOS在CP&#x2F;M的基础上有了较大的扩充，使其在功能上有很大的提高。MS-DOS在曾搭载在16位微机IBM-PC中。MS-DOS是事实上的16位单用户单任务操作系统标准。</p>
+<p><img src="https://betawiki.net/images/8/8b/MS-DOS-1.25-Interface.png" alt="MS-DOS 1.25 - BetaWiki"></p>
+<h4 id="单用户多任务操作系统"><a href="#单用户多任务操作系统" class="headerlink" title="单用户多任务操作系统"></a>单用户多任务操作系统</h4><p>​		在单用户多任务操作系统中，只运行一个用户上机，用户可以同时运行多个程序或任务，并且这些任务可以并发执行。操作系统会分配系统资源，如处理器时间、内存、磁盘空间等，以供各个任务使用。用户可以在不同的应用程序之间切换，并且每个应用程序都可以独立运行，相互之间不会干扰。</p>
+<p>​		其中最具代表性的是微软公司推出的Windows操作系统：Windows3.0和Windows3.1都是专门针对32位微机开发的操作系统。</p>
+<p>​							<img src="https://p1.ssl.qhimg.com/t011c08468c8d391ea9.jpg" alt="Windows3.0_360百科"></p>
+<h4 id="多用户多任务操作系统"><a href="#多用户多任务操作系统" class="headerlink" title="多用户多任务操作系统"></a>多用户多任务操作系统</h4><p>​		允许多个用户通过各自的终端，使用同一台机器，共享主机系统中的各种资源，而每个用户程序又可进一步分成几个任务，使它们能够并发执行，从而可进一步提高资源利用率和系统吞吐量。</p>
+<p>​		怎么理解多用户？</p>
+<p>​		假如公司有一台Linux服务器，那么上班的时候公司的3个程序员，可以以不同的账户同时登录这台服务器进行代码编写。</p>
+]]></content>
+      <categories>
+        <category>操作系统</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>英语学习笔记2023年7月20日001</title>
+    <url>/2023/07/20/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02023%E5%B9%B47%E6%9C%8820%E6%97%A5001/</url>
+    <content><![CDATA[<p>The <strong>Dutch</strong> giant Elsevier, which claims to publish 25% of the scientific papers produced in the world, <strong>made profits of more than £900m last year</strong>, while UK universities alone spent more than £210m in 2016 to enable researchers to access their own publicly funded research.</p>
+<p>荷兰大型企业爱思唯尔声称发表了世界上25%的科学论文，去年盈利超过9亿英镑，而仅英国的大学在2016年就花费了超过2.1亿英镑，以便研究人员能够获取大学自身依靠公共资助的研究（数据）。</p>
+<blockquote>
+<p>Dutch：荷兰</p>
+</blockquote>
+<blockquote>
+<p>为什么用made profits of more than £900m，而不是made more than £900m profits？</p>
+<p>在这个句子中，使用”made profits of more than £900m”的表达方式更为常见和自然。这是因为在英语中，通常使用”make profits”这个短语来表示获得利润或盈利。这种用法是固定的习语，常用于描述公司、组织或个人在某一时间段内的盈利情况。</p>
+<p>另一方面，使用”made more than £900m profits”也是可以理解的，但相对较少使用。这种表达方式可能会被认为是不太习惯的或不常见的语法结构。</p>
+<p>总之，”made profits of more than £900m”更符合英语的习惯用法，更常见于商业和财经领域的描述中。</p>
+</blockquote>
+<p>But he believes that this <strong>very</strong> difficulty may have had the c<strong>ompensating</strong> advantage of forcing him to think long and <strong>intently</strong> about every sentence, and thus enabling him to <strong>detect</strong> errors in reasoning and in his own observations.</p>
+<p>但是他相信，正是这个困难具有一种补偿性的优势，迫使他长时间专注地思考每一句话，从而使他发现自己的推理和言论中的错误。</p>
+<blockquote>
+<p>very：作为形容词时，有“正是”的意思</p>
+</blockquote>
+<blockquote>
+<p>compensate：*v.*补偿；弥补；赔偿，赔款</p>
+<p>巧记compensate</p>
+<p>com：共同、强调</p>
+<p>pens：支付。pens和spend的pend是同一个词根</p>
+<p>ate：动词后缀</p>
+</blockquote>
+<blockquote>
+<p>intently：adv. 专心地；一心一意地；心无旁骛地</p>
+</blockquote>
+<blockquote>
+<p>detect：vt. 察觉；发现；探测</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>英语</category>
+      </categories>
+      <tags>
+        <tag>英语</tag>
+      </tags>
+  </entry>
+</search>
