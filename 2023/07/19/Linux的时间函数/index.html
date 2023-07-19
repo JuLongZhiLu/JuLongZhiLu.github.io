@@ -19,25 +19,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="我认为写博客可以给个人、社会和世界带来价值">
-<meta property="og:type" content="website">
-<meta property="og:title" content="巨龙之路的GitHub个人博客">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="本篇文章始于2023年7月19日下午 time函数原型获取自 1970 年 1月 1 日早晨零点到现在的秒数，也叫做 12#include&lt;time.h&gt;time_t time(time_t *timep);  使用方法如果time函数的参数timep为NULL，那么time函数会返回自 1970 年 1月 1 日早晨零点到现在的秒数； 1234567#include&lt;time.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux的时间函数">
+<meta property="og:url" content="http://example.com/2023/07/19/Linux%E7%9A%84%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="巨龙之路的GitHub个人博客">
-<meta property="og:description" content="我认为写博客可以给个人、社会和世界带来价值">
+<meta property="og:description" content="本篇文章始于2023年7月19日下午 time函数原型获取自 1970 年 1月 1 日早晨零点到现在的秒数，也叫做 12#include&lt;time.h&gt;time_t time(time_t *timep);  使用方法如果time函数的参数timep为NULL，那么time函数会返回自 1970 年 1月 1 日早晨零点到现在的秒数； 1234567#include&lt;time.">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-07-19T06:33:43.000Z">
+<meta property="article:modified_time" content="2023-07-19T06:36:25.421Z">
 <meta property="article:author" content="巨龙之路">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2023/07/19/Linux%E7%9A%84%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2023/07/19/Linux%E7%9A%84%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/","path":"2023/07/19/Linux的时间函数/","title":"Linux的时间函数"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>巨龙之路的GitHub个人博客</title>
+<title>Linux的时间函数 | 巨龙之路的GitHub个人博客</title>
   
 
 
@@ -70,7 +73,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">巨龙之路的GitHub个人博客</h1>
+      <p class="site-title">巨龙之路的GitHub个人博客</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -96,7 +99,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -109,6 +112,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#time"><span class="nav-number">1.</span> <span class="nav-text">time</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E5%8E%9F%E5%9E%8B"><span class="nav-number">1.0.1.</span> <span class="nav-text">函数原型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-number">1.0.2.</span> <span class="nav-text">使用方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ctime"><span class="nav-number">2.</span> <span class="nav-text">ctime</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E5%8E%9F%E5%9E%8B-1"><span class="nav-number">2.0.1.</span> <span class="nav-text">函数原型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95-1"><span class="nav-number">2.0.2.</span> <span class="nav-text">使用方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%96%91%E6%83%91"><span class="nav-number">2.0.3.</span> <span class="nav-text">疑惑</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -148,16 +152,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/19/Linux%E7%9A%84%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -171,13 +176,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 巨龙之路的GitHub个人博客">
+      <meta itemprop="name" content="Linux的时间函数 | 巨龙之路的GitHub个人博客">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/07/19/Linux%E7%9A%84%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/" class="post-title-link" itemprop="url">Linux的时间函数</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Linux的时间函数
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -209,8 +214,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <p>本篇文章始于2023年7月19日下午</p>
+    <div class="post-body" itemprop="articleBody"><p>本篇文章始于2023年7月19日下午</p>
 <h3 id="time"><a href="#time" class="headerlink" title="time"></a>time</h3><h5 id="函数原型"><a href="#函数原型" class="headerlink" title="函数原型"></a>函数原型</h5><p>获取自 1970 年 1月 1 日早晨零点到现在的秒数，也叫做</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">time_t</span> <span class="title">time</span><span class="params">(<span class="type">time_t</span> *timep)</span></span>;</span><br></pre></td></tr></table></figure>
 
@@ -232,7 +236,6 @@
 <p>也就是说，通过用指针作为参数，ctime函数就不需要拷贝一份time_t，再根据这副本来修改静态缓冲区的内容，而是可以直接通过指针找到time_t来修改静态缓冲区的内容。这样可以节省内存空间和提高运行效率。</p>
 <p>需要注意的是，<code>ctime</code>函数在每次调用时都会使用同一个静态缓冲区，因此如果多次调用<code>ctime</code>函数，后续的调用会覆盖前面调用的结果。如果需要保存多个时间字符串，可以使用<code>localtime</code>或<code>gmtime</code>函数进行转换，并使用不同的缓冲区来存储结果。</p>
 
-      
     </div>
 
     
@@ -240,191 +243,25 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-tags">
+              <a href="/tags/Linux/" rel="tag"># Linux</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/07/19/%E5%8D%B7%E9%A6%96%E8%AF%AD/" rel="prev" title="卷首语">
+                  <i class="fa fa-chevron-left"></i> 卷首语
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/19/%E5%8D%B7%E9%A6%96%E8%AF%AD/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="巨龙之路">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="我认为写博客可以给个人、社会和世界带来价值">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/07/19/%E5%8D%B7%E9%A6%96%E8%AF%AD/" class="post-title-link" itemprop="url">卷首语</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-07-19 09:31:40 / 修改时间：10:39:49" itemprop="dateCreated datePublished" datetime="2023-07-19T09:31:40+08:00">2023-07-19</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>本博客创建于2023年7月19日上午，</p>
-<p>我是根据B站UP主<a target="_blank" rel="noopener" href="https://space.bilibili.com/270875564">DID迪</a>的视频《[教程]Hexo &amp; Github搭建自己的专属博客》来搭建本博客的，</p>
-<p>本博客使用了Hexo的NexT主题，</p>
-<p>本博客的NexT主题的美化是根据B站UP<a target="_blank" rel="noopener" href="https://space.bilibili.com/15289301">Mackxin</a>的视频《[馨客栈分享]使用Hexo博客搭建的个人博客，使用Next主题来进行优化改造》来的</p>
-<blockquote>
-<p>视频链接</p>
-<p>【[教程]Hexo &amp; Github搭建自己的专属博客】 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Eg41157tL/?share_source=copy_web&vd_source=a588b30b1c8de1d716699b8ae558538f">https://www.bilibili.com/video/BV1Eg41157tL/?share_source=copy_web&amp;vd_source=a588b30b1c8de1d716699b8ae558538f</a></p>
-<p>【[馨客栈分享]使用Hexo博客搭建的个人博客，使用Next主题来进行优化改造】 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV16W411t7mq/?p=5&share_source=copy_web&vd_source=a588b30b1c8de1d716699b8ae558538f">https://www.bilibili.com/video/BV16W411t7mq/?p=5&amp;share_source=copy_web&amp;vd_source=a588b30b1c8de1d716699b8ae558538f</a></p>
-</blockquote>
-<blockquote>
-<p>Hexo官网</p>
-<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a></p>
-</blockquote>
-<blockquote>
-<p>Next官网</p>
-<p><a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/">NexT 使用文档 (iissnan.com)</a></p>
-<p>Next使用教程</p>
-<p><a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/getting-started.html">开始使用 - NexT 使用文档 (iissnan.com)</a></p>
-</blockquote>
-<p>在这里要感谢DID迪、Mackxin、Hexo和GitHub，</p>
-<p>没有他们的帮助，我无法轻松的创建这个个人博客网站</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/19/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="巨龙之路">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="我认为写博客可以给个人、社会和世界带来价值">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/07/19/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2023-07-19 06:59:40" itemprop="dateCreated datePublished" datetime="2023-07-19T06:59:40+08:00">2023-07-19</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
 
 
