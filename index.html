@@ -1,926 +1,235 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
-
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
-
-    <meta name="description" content="我认为写博客可以给个人、社会和世界带来价值">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>巨龙之路的GitHub个人博客</title><meta name="author" content="巨龙之路"><meta name="copyright" content="巨龙之路"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="我认为写博客可以给个人、社会和世界带来价值">
 <meta property="og:type" content="website">
 <meta property="og:title" content="巨龙之路的GitHub个人博客">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="巨龙之路的GitHub个人博客">
 <meta property="og:description" content="我认为写博客可以给个人、社会和世界带来价值">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:author" content="巨龙之路">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '巨龙之路的GitHub个人博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-08-09 18:20:15'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-<link rel="canonical" href="http://example.com/">
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
 
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
 
-
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
-
-<script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>巨龙之路的GitHub个人博客</title>
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-
-
-
-
-
-
-
-
-  <noscript>
-    <link rel="stylesheet" href="/css/noscript.css">
-  </noscript>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
-  <div class="headband"></div>
-
-  <main class="main">
-    <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <i class="logo-line"></i>
-      <h1 class="site-title">巨龙之路的GitHub个人博客</h1>
-      <i class="logo-line"></i>
-    </a>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="搜索" role="button">
-    </div>
-  </div>
-</div>
-
-
-
-<nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
-  </ul>
-</nav>
-
-
-
-
-</header>
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-  
-  <aside class="sidebar">
-
-    <div class="sidebar-inner sidebar-overview-active">
-      <ul class="sidebar-nav">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <div class="sidebar-panel-container">
-        <!--noindex-->
-        <div class="post-toc-wrap sidebar-panel">
-        </div>
-        <!--/noindex-->
-
-        <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">巨龙之路</p>
-  <div class="site-description" itemprop="description">我认为写博客可以给个人、社会和世界带来价值</div>
-</div>
-<div class="site-state-wrap animated">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-        <a href="/archives/">
-          <span class="site-state-item-count">7</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-          <a href="/categories/">
-        <span class="site-state-item-count">5</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-          <a href="/tags/">
-        <span class="site-state-item-count">5</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-
-        </div>
-      </div>
-    </div>
-
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </aside>
-
-
-    </div>
-
-    <div class="main-inner index posts-expand">
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/20/2023%E5%B9%B47%E6%9C%8820%E6%97%A5%E6%80%9D%E8%80%83%EF%BC%9A%E6%99%AE%E9%80%9A%E4%BA%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="巨龙之路">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="我认为写博客可以给个人、社会和世界带来价值">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/07/20/2023%E5%B9%B47%E6%9C%8820%E6%97%A5%E6%80%9D%E8%80%83%EF%BC%9A%E6%99%AE%E9%80%9A%E4%BA%BA/" class="post-title-link" itemprop="url">2023年7月20日思考：普通人</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-07-20 13:36:46 / 修改时间：13:39:09" itemprop="dateCreated datePublished" datetime="2023-07-20T13:36:46+08:00">2023-07-20</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>这篇文章始于2023年7月20日</p>
-<p>​		我还是做一个普通人吧，对自己的要求不用那么高，要降低对自己的要求。因为对自己要求太高，很容易就会因为一点不顺就感到沮丧和挫败。</p>
-<p>​		今天早上我给我的GitHub博客网站添加搜索功能时，出了点问题：搜索功能在网页上的位置错位了，而且最后我也没弄得，这样不太好看。虽然搜索功能可以使用，但因为这个小问题让我产生了强烈的挫败感。究其原因还是对自己的要求太高了，太完美主义。</p>
-<p>​		还有，我们学校7月初就放假了，放假后我要求自己每天都必须学习大量的内容，把时间安排得满满的。虽然在这个过程中我学了很东西，但是也有很长时间是处于一种沮丧和挫败感的状态，因为稍有时间上的浪费和不能按照规划来完成学习任务，我就会产生强烈的挫败感，这种挫败感让我什么事情都不想做了。究其原因，我想还是对自己的要求太高了。</p>
-<p>​		所以，我觉得我还是做个普通人吧，对自己的要求低点。这样有时候反而是件好事，因为不会因为一点点小问题就产生挫败感。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/20/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02023%E5%B9%B47%E6%9C%8820%E6%97%A5001/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="巨龙之路">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="我认为写博客可以给个人、社会和世界带来价值">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/07/20/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02023%E5%B9%B47%E6%9C%8820%E6%97%A5001/" class="post-title-link" itemprop="url">英语学习笔记2023年7月20日001</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-07-20 00:19:13 / 修改时间：00:19:57" itemprop="dateCreated datePublished" datetime="2023-07-20T00:19:13+08:00">2023-07-20</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%8B%B1%E8%AF%AD/" itemprop="url" rel="index"><span itemprop="name">英语</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>The <strong>Dutch</strong> giant Elsevier, which claims to publish 25% of the scientific papers produced in the world, <strong>made profits of more than £900m last year</strong>, while UK universities alone spent more than £210m in 2016 to enable researchers to access their own publicly funded research.</p>
-<p>荷兰大型企业爱思唯尔声称发表了世界上25%的科学论文，去年盈利超过9亿英镑，而仅英国的大学在2016年就花费了超过2.1亿英镑，以便研究人员能够获取大学自身依靠公共资助的研究（数据）。</p>
-<blockquote>
-<p>Dutch：荷兰</p>
-</blockquote>
-<blockquote>
-<p>为什么用made profits of more than £900m，而不是made more than £900m profits？</p>
-<p>在这个句子中，使用”made profits of more than £900m”的表达方式更为常见和自然。这是因为在英语中，通常使用”make profits”这个短语来表示获得利润或盈利。这种用法是固定的习语，常用于描述公司、组织或个人在某一时间段内的盈利情况。</p>
-<p>另一方面，使用”made more than £900m profits”也是可以理解的，但相对较少使用。这种表达方式可能会被认为是不太习惯的或不常见的语法结构。</p>
-<p>总之，”made profits of more than £900m”更符合英语的习惯用法，更常见于商业和财经领域的描述中。</p>
-</blockquote>
-<p>But he believes that this <strong>very</strong> difficulty may have had the c<strong>ompensating</strong> advantage of forcing him to think long and <strong>intently</strong> about every sentence, and thus enabling him to <strong>detect</strong> errors in reasoning and in his own observations.</p>
-<p>但是他相信，正是这个困难具有一种补偿性的优势，迫使他长时间专注地思考每一句话，从而使他发现自己的推理和言论中的错误。</p>
-<blockquote>
-<p>very：作为形容词时，有“正是”的意思</p>
-</blockquote>
-<blockquote>
-<p>compensate：*v.*补偿；弥补；赔偿，赔款</p>
-<p>巧记compensate</p>
-<p>com：共同、强调</p>
-<p>pens：支付。pens和spend的pend是同一个词根</p>
-<p>ate：动词后缀</p>
-</blockquote>
-<blockquote>
-<p>intently：adv. 专心地；一心一意地；心无旁骛地</p>
-</blockquote>
-<blockquote>
-<p>detect：vt. 察觉；发现；探测</p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/19/%E5%BE%AE%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%91%E5%B1%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="巨龙之路">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="我认为写博客可以给个人、社会和世界带来价值">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/07/19/%E5%BE%AE%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%91%E5%B1%95/" class="post-title-link" itemprop="url">微机操作系统的发展</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-07-19 21:31:07 / 修改时间：21:32:11" itemprop="dateCreated datePublished" datetime="2023-07-19T21:31:07+08:00">2023-07-19</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index"><span itemprop="name">操作系统</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>本文章始于2023年7月19日</p>
-<h4 id="微机操作系统的定义"><a href="#微机操作系统的定义" class="headerlink" title="微机操作系统的定义"></a>微机操作系统的定义</h4><p>配置在微型机上的操作系统称为微机操作系统</p>
-<h4 id="单任务单用户操作系统"><a href="#单任务单用户操作系统" class="headerlink" title="单任务单用户操作系统"></a>单任务单用户操作系统</h4><p>​		一次只能有一个用户，且只能执行一个任务。用户不能同时运行多个程序或任务，当一个任务执行完成后，用户可以选择另一个任务来执行。</p>
-<p>​		这是最简单的微机操作系统。</p>
-<p>​		尽管这种类型的操作系统功能相对有限，但在一些简单的环境中仍然可以满足用户的需求。例如，一些嵌入式系统、个人计算机以及一些特定用途的设备可能会采用单用户单任务操作系统。</p>
-<p>​		这种操作系统最具代表性的是CP&#x2F;M和MS-DOS</p>
-<h5 id="CP-M"><a href="#CP-M" class="headerlink" title="CP&#x2F;M"></a>CP&#x2F;M</h5><p>​		CP&#x2F;M是由Digital Research公司于1975年开发的8位微机操作系统，在8位微机中占据了统治地位。</p>
-<img src="https://images.computerhistory.org/blog-media/cpm_cpm13_screenshot.jpg" alt="Early Digital Research CP/M Source Code | @CHM Blog | Computer History ..." style="zoom:80%;" />
-
-
-
-<h5 id="MS-DOS"><a href="#MS-DOS" class="headerlink" title="MS-DOS"></a>MS-DOS</h5><p>​		MS-DOS在CP&#x2F;M的基础上有了较大的扩充，使其在功能上有很大的提高。MS-DOS在曾搭载在16位微机IBM-PC中。MS-DOS是事实上的16位单用户单任务操作系统标准。</p>
-<p><img src="https://betawiki.net/images/8/8b/MS-DOS-1.25-Interface.png" alt="MS-DOS 1.25 - BetaWiki"></p>
-<h4 id="单用户多任务操作系统"><a href="#单用户多任务操作系统" class="headerlink" title="单用户多任务操作系统"></a>单用户多任务操作系统</h4><p>​		在单用户多任务操作系统中，只运行一个用户上机，用户可以同时运行多个程序或任务，并且这些任务可以并发执行。操作系统会分配系统资源，如处理器时间、内存、磁盘空间等，以供各个任务使用。用户可以在不同的应用程序之间切换，并且每个应用程序都可以独立运行，相互之间不会干扰。</p>
-<p>​		其中最具代表性的是微软公司推出的Windows操作系统：Windows3.0和Windows3.1都是专门针对32位微机开发的操作系统。</p>
-<p>​							<img src="https://p1.ssl.qhimg.com/t011c08468c8d391ea9.jpg" alt="Windows3.0_360百科"></p>
-<h4 id="多用户多任务操作系统"><a href="#多用户多任务操作系统" class="headerlink" title="多用户多任务操作系统"></a>多用户多任务操作系统</h4><p>​		允许多个用户通过各自的终端，使用同一台机器，共享主机系统中的各种资源，而每个用户程序又可进一步分成几个任务，使它们能够并发执行，从而可进一步提高资源利用率和系统吞吐量。</p>
-<p>​		怎么理解多用户？</p>
-<p>​		假如公司有一台Linux服务器，那么上班的时候公司的3个程序员，可以以不同的账户同时登录这台服务器进行代码编写。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/19/%E6%97%A0%E7%A9%B7%E5%B0%8F%E5%92%8C%E6%97%A0%E7%A9%B7%E5%A4%A7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="巨龙之路">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="我认为写博客可以给个人、社会和世界带来价值">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/07/19/%E6%97%A0%E7%A9%B7%E5%B0%8F%E5%92%8C%E6%97%A0%E7%A9%B7%E5%A4%A7/" class="post-title-link" itemprop="url">无穷小和无穷大</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-07-19 17:30:04 / 修改时间：17:43:00" itemprop="dateCreated datePublished" datetime="2023-07-19T17:30:04+08:00">2023-07-19</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">高等数学</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>本文章始于2023年7月19日下午</p>
-<h2 id="（一）无穷小"><a href="#（一）无穷小" class="headerlink" title="（一）无穷小"></a>（一）无穷小</h2><h3 id="1、无穷小的概念"><a href="#1、无穷小的概念" class="headerlink" title="1、无穷小的概念"></a>1、无穷小的概念</h3><p>若函数$ f(x) $当$ x \rightarrow x_0 $(或$ x \rightarrow ∞) $时的极限为零，则称$ f(x) $为$ x \rightarrow x_0 $或$ x \rightarrow ∞ $时的无穷小量</p>
-<p>注：以0为极限的变量称为无穷小量；提到无穷小量，必须指明极限过程</p>
-<p>我感觉在无穷小量和无穷大量这部分内容中，无穷小量是重点，因为无穷小量的内容要比无穷大量多许多</p>
-<h3 id="2、无穷小的性质"><a href="#2、无穷小的性质" class="headerlink" title="2、无穷小的性质"></a>2、无穷小的性质</h3><p>（1）有限个无穷小的和仍是无穷小</p>
-<p>（2）有效个无穷小的积仍是无穷小</p>
-<p>（3）无穷小量与有界量的积仍是无穷小</p>
-<p>注：两个无穷小的商不一定是无穷小,有多种不同的情况</p>
-<p>$\displaystyle \lim_{x \to 0}{\frac{x^2}{3x}}&#x3D;0$，$\displaystyle \lim_{x \to 0}{\frac{3x}{x^2}}&#x3D;\infty$，$\displaystyle \lim_{x \to 0}{\frac{\sin x}{3x}}&#x3D;\frac{1}{3}$</p>
-<blockquote>
-<p>为什么两个无穷小的商不一定是无穷小？</p>
-<p>在数学中，无穷小是指无限接近于零的量。当我们讨论两个无穷小的商时，并不一定能得到无穷小的结果。这是因为无穷小的性质取决于它们的增长率。</p>
-<p>如果两个无穷小的增长率相同，那么它们的商可能是无穷小。例如，如果无穷小 a 和无穷小 b 都以相同的速度趋近于零，那么它们的商 a&#x2F;b 可能是无穷小。</p>
-<p>但是，如果两个无穷小的增长率不同，它们的商就不一定是无穷小。例如，如果无穷小 a 的增长率比无穷小 b 更快，那么它们的商 a&#x2F;b 可能不是无穷小，而是趋近于某个有限的非零值。</p>
-<p>因此，两个无穷小的商是否是无穷小，取决于它们各自的增长率。如果增长率相同，可能是无穷小；如果增长率不同，可能是有限的非零值。</p>
-<p>为了更好的说明这点，可以用python代码来举一个实际的例子</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="comment"># 例子1</span></span><br><span class="line">&gt;n = <span class="number">1000</span></span><br><span class="line">&gt;a = <span class="number">1</span> / n</span><br><span class="line">&gt;b = <span class="number">1</span> / n**<span class="number">2</span></span><br><span class="line">&gt;result = a / b</span><br><span class="line">&gt;<span class="built_in">print</span>(result)  <span class="comment"># 输出：1000</span></span><br><span class="line">&gt;<span class="comment"># 例子2</span></span><br><span class="line">&gt;n = <span class="number">1000</span></span><br><span class="line">&gt;a = <span class="number">1</span> / n</span><br><span class="line">&gt;b = <span class="number">2</span> / n</span><br><span class="line">&gt;result = a / b</span><br><span class="line">&gt;<span class="built_in">print</span>(result)  <span class="comment"># 输出：0.5</span></span><br></pre></td></tr></table></figure>
-
-<p>在第一个例子中，我们选择 n 的值为 1000，然后计算 a 和 b。最后，我们计算 a&#x2F;b 的商并打印结果。你会发现，结果是 1000，而不是无穷小。</p>
-<p>在第二个例子中，我们同样选择 n 的值为 1000，然后计算 a 和 b。最后，我们计算 a&#x2F;b 的商并打印结果。你会发现，结果是 0.5，一个有限的非零值。</p>
-</blockquote>
-<h3 id="3、无穷小的比较"><a href="#3、无穷小的比较" class="headerlink" title="3、无穷小的比较"></a>3、无穷小的比较</h3><p>如果$\lim \frac{\beta}{\alpha}&#x3D;0$,那么就说β是比α高阶的无穷小，记作β&#x3D;$\omicron(\alpha)$</p>
-<p>如果$ \lim \frac{\beta}{\alpha}&#x3D;∞ $,那么就说β是比α低阶的无穷小</p>
-<p>如果$ \lim \frac{\beta}{\alpha}&#x3D;c \neq 0$,那么就说β和α是同阶无穷小</p>
-<p>如果$\lim \frac{\beta}{\alpha^k}&#x3D;c \neq 0 $,那么就说β是关于α的k阶无穷小</p>
-<p>如果$ \lim \frac{\beta}{\alpha}&#x3D;1 $,那么就说β与α是同阶无穷小，记作$ \beta $ ~ $ \alpha $</p>
-<h3 id="4、无穷小的两个定理"><a href="#4、无穷小的两个定理" class="headerlink" title="4、无穷小的两个定理"></a>4、无穷小的两个定理</h3><p>定理1：$\beta$与$\alpha$是等价无穷小的充分必要条件是$\beta &#x3D; \alpha + \omicron(\alpha)$</p>
-<p>定理2：设$\alpha \sim \widetilde{\alpha},\beta \sim \widetilde{\beta}$，且$\lim \frac{\widetilde{\beta}}{\widetilde{\alpha}}$ 存在，则$\lim \frac{\beta}{\alpha} &#x3D; \lim \frac{\widetilde{\beta}}{\widetilde{\alpha}}$</p>
-<p>定理2表明，求两个无穷小之比的极限时，分子及分母都可用等价无穷小来代替。因此，如果用来代替的无穷小宣德适当的话，就可以使计算简化。</p>
-<blockquote>
-<p>现在我明白为什么要学无穷小量和无穷大量了，因为无穷小量可以使极限的运算得到简化，更具体的说是无穷小量的定理可以使极限的运算得到简化。</p>
-<p>由此，我认为，在学习每一个数学知识的时候，都应该思考这个知识有什么用以及这个知识与其他学过数学知识有什么关联或联系吗？</p>
-</blockquote>
-<h3 id="5、常用的等价无穷小"><a href="#5、常用的等价无穷小" class="headerlink" title="5、常用的等价无穷小"></a>5、常用的等价无穷小</h3><p>为了方便极限的运算，我建议要去记忆一些常见的、常用的等价无穷小</p>
-<p>$\sin x \sim x (x \to 0)$</p>
-<p>$\sqrt[n]{1+x}-1 \sim \frac{1}{n}x (x \to 0)$</p>
-<p>$\tan x \sim x(x \to 0)$</p>
-<p>$\arcsin x \sim x(x \to 0)$</p>
-<p>$1-\cos x \sim \frac{1}{2}x^2(x \to 0)$</p>
-<p>$\arctan x \sim x(x \to 0)$</p>
-<p>$\sec x-1 \sim \frac{x^2}{2}$</p>
-<h3 id="6、无穷小的等价关系的性质"><a href="#6、无穷小的等价关系的性质" class="headerlink" title="6、无穷小的等价关系的性质"></a>6、无穷小的等价关系的性质</h3><p>（1）自反性：$\alpha \sim \alpha$</p>
-<p>（2）对称性：若$\alpha \sim \beta$，则$\beta \sim \alpha$</p>
-<p>（3）传递性：若$\alpha \sim \beta$,$\beta \sim \gamma$,则$\alpha \sim \gamma$</p>
-<h2 id="（二）无穷大"><a href="#（二）无穷大" class="headerlink" title="（二）无穷大"></a>（二）无穷大</h2><h3 id="1、无穷大的概念"><a href="#1、无穷大的概念" class="headerlink" title="1、无穷大的概念"></a>1、无穷大的概念</h3><p>如果当$x \to x_0$（或$x \to ∞$）时，对应的函数值的绝对值$|f(x)|$可以大于预先指定的任何很大的正数M，那么就称函数$f(x)$是当$x \to x_0$（或$x \to ∞$）时的无穷大。</p>
-<p>注意：按函数极限的定义来说，$x \to x_0$（或$x \to ∞$）时的无穷大的函数$f(x)$的极限是不存在的。但为了方便描述函数的这一性态，我们也说“函数的极限是无穷大的”</p>
-<h3 id="2、无穷大的相关定律和定理"><a href="#2、无穷大的相关定律和定理" class="headerlink" title="2、无穷大的相关定律和定理"></a>2、无穷大的相关定律和定理</h3><p>定律：一般来说，如果$\displaystyle \lim_{x \to x_0}f(x)&#x3D;∞ $ ,那么直线$x&#x3D;x_0$是函数$y&#x3D;f(x)$的图形的铅直渐近线</p>
-<p>定理：在自变量的同一变化过程中，如果$f(x)$为无穷大，那么$\frac{1}{f(x)}$为无穷小；反之，如果$f(x)$为无穷小，且$f(x) \neq 0$，那么$\frac{1}{f(x)}$为无穷大</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/19/Linux%E7%9A%84%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="巨龙之路">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="我认为写博客可以给个人、社会和世界带来价值">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/07/19/Linux%E7%9A%84%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/" class="post-title-link" itemprop="url">Linux的时间函数</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-07-19 14:33:43 / 修改时间：14:36:25" itemprop="dateCreated datePublished" datetime="2023-07-19T14:33:43+08:00">2023-07-19</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>本篇文章始于2023年7月19日下午</p>
-<h3 id="time"><a href="#time" class="headerlink" title="time"></a>time</h3><h5 id="函数原型"><a href="#函数原型" class="headerlink" title="函数原型"></a>函数原型</h5><p>获取自 1970 年 1月 1 日早晨零点到现在的秒数，也叫做</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">time_t</span> <span class="title">time</span><span class="params">(<span class="type">time_t</span> *timep)</span></span>;</span><br></pre></td></tr></table></figure>
-
-<h5 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h5><p>如果time函数的参数timep为NULL，那么time函数会返回自 1970 年 1月 1 日早晨零点到现在的秒数；</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">time_t</span> tm;</span><br><span class="line">    tm=<span class="built_in">time</span>(<span class="literal">NULL</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,tm);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>如果time函数的参数不为NULL，那么time函数会把自 1970 年 1月 1 日早晨零点到现在的秒数赋值给timep指向的time_t类型变量</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">time_t</span> tm;</span><br><span class="line">    <span class="built_in">time</span>(&amp;tm);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,tm);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>建议使用time(NULL)，因为这样可以减少出错的可能性，并且使用起来更简单</p>
-<h3 id="ctime"><a href="#ctime" class="headerlink" title="ctime"></a>ctime</h3><h5 id="函数原型-1"><a href="#函数原型-1" class="headerlink" title="函数原型"></a>函数原型</h5><p>将time_t转换成可打印格式，所谓可打印格式类似于“Wed Jul 19 01:59:16 2023”</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">char</span> *<span class="title">ctime</span><span class="params">(<span class="type">const</span> <span class="type">time_t</span> *timep)</span></span>;</span><br></pre></td></tr></table></figure>
-
-<h5 id="使用方法-1"><a href="#使用方法-1" class="headerlink" title="使用方法"></a>使用方法</h5><p>把一个指向 time_t 的指针作为 timep 参数传入函数 ctime()，将返回一个长达 26 字节的字符串，内含标准格式的日期和时间</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;time.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">time_t</span> current_time;</span><br><span class="line">    <span class="built_in">time</span>(&amp;current_time);</span><br><span class="line">    </span><br><span class="line">    <span class="type">char</span>* time_str = <span class="built_in">ctime</span>(&amp;current_time);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Current time: %s&quot;</span>, time_str);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="疑惑"><a href="#疑惑" class="headerlink" title="疑惑"></a>疑惑</h5><p>为什么ctime函数要用一个指针作为参数，这样不是很麻烦吗？</p>
-<p>这是因为<code>ctime</code>函数需要修改一个静态缓冲区中的内容，并返回指向该缓冲区的指针。这个缓冲区包含了一个字符串表示的时间。通过将时间的指针传递给<code>ctime</code>函数，函数可以直接在缓冲区中进行修改，然后返回指向缓冲区的指针，以便用户可以使用这个字符串。</p>
-<p>也就是说，通过用指针作为参数，ctime函数就不需要拷贝一份time_t，再根据这副本来修改静态缓冲区的内容，而是可以直接通过指针找到time_t来修改静态缓冲区的内容。这样可以节省内存空间和提高运行效率。</p>
-<p>需要注意的是，<code>ctime</code>函数在每次调用时都会使用同一个静态缓冲区，因此如果多次调用<code>ctime</code>函数，后续的调用会覆盖前面调用的结果。如果需要保存多个时间字符串，可以使用<code>localtime</code>或<code>gmtime</code>函数进行转换，并使用不同的缓冲区来存储结果。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/19/%E5%8D%B7%E9%A6%96%E8%AF%AD/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="巨龙之路">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="我认为写博客可以给个人、社会和世界带来价值">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/07/19/%E5%8D%B7%E9%A6%96%E8%AF%AD/" class="post-title-link" itemprop="url">卷首语</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-07-19 09:31:40 / 修改时间：10:39:49" itemprop="dateCreated datePublished" datetime="2023-07-19T09:31:40+08:00">2023-07-19</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>本博客创建于2023年7月19日上午，</p>
-<p>我是根据B站UP主<a target="_blank" rel="noopener" href="https://space.bilibili.com/270875564">DID迪</a>的视频《[教程]Hexo &amp; Github搭建自己的专属博客》来搭建本博客的，</p>
-<p>本博客使用了Hexo的NexT主题，</p>
-<p>本博客的NexT主题的美化是根据B站UP<a target="_blank" rel="noopener" href="https://space.bilibili.com/15289301">Mackxin</a>的视频《[馨客栈分享]使用Hexo博客搭建的个人博客，使用Next主题来进行优化改造》来的</p>
-<blockquote>
-<p>视频链接</p>
-<p>【[教程]Hexo &amp; Github搭建自己的专属博客】 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Eg41157tL/?share_source=copy_web&vd_source=a588b30b1c8de1d716699b8ae558538f">https://www.bilibili.com/video/BV1Eg41157tL/?share_source=copy_web&amp;vd_source=a588b30b1c8de1d716699b8ae558538f</a></p>
-<p>【[馨客栈分享]使用Hexo博客搭建的个人博客，使用Next主题来进行优化改造】 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV16W411t7mq/?p=5&share_source=copy_web&vd_source=a588b30b1c8de1d716699b8ae558538f">https://www.bilibili.com/video/BV16W411t7mq/?p=5&amp;share_source=copy_web&amp;vd_source=a588b30b1c8de1d716699b8ae558538f</a></p>
-</blockquote>
-<blockquote>
-<p>Hexo官网</p>
-<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a></p>
-</blockquote>
-<blockquote>
-<p>Next官网</p>
-<p><a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/">NexT 使用文档 (iissnan.com)</a></p>
-<p>Next使用教程</p>
-<p><a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/getting-started.html">开始使用 - NexT 使用文档 (iissnan.com)</a></p>
-</blockquote>
-<p>在这里要感谢DID迪、Mackxin、Hexo和GitHub，</p>
-<p>没有他们的帮助，我无法轻松的创建这个个人博客网站</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/19/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="巨龙之路">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="我认为写博客可以给个人、社会和世界带来价值">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 巨龙之路的GitHub个人博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/07/19/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2023-07-19 06:59:40" itemprop="dateCreated datePublished" datetime="2023-07-19T06:59:40+08:00">2023-07-19</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-
-</div>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-inner">
-
-  <div class="copyright">
-    &copy; 
-    <span itemprop="copyrightYear">2023</span>
-    <span class="with-love">
-      <i class="fa fa-heart"></i>
-    </span>
-    <span class="author" itemprop="copyrightHolder">巨龙之路</span>
-  </div>
-<div class="busuanzi-count">
-    <span class="post-meta-item" id="busuanzi_container_site_uv">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="总访客量">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
-    </span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="总访问量">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
-  </div>
-
-    </div>
-  </footer>
-
-  
-  <div class="toggle sidebar-toggle" role="button">
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-  </div>
-  <div class="sidebar-dimmer"></div>
-  <div class="back-to-top" role="button" aria-label="返回顶部">
-    <i class="fa fa-arrow-up fa-lg"></i>
-    <span>0%</span>
-  </div>
-
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
-
-
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
-
-  
-
-
-
-
-
-
-  
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
-  
-
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
-<script src="/js/third-party/math/mathjax.js"></script>
-
-
-
-</body>
-</html>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="巨龙之路的GitHub个人博客"><span class="site-name">巨龙之路的GitHub个人博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">巨龙之路的GitHub个人博客</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/07/20/2023%E5%B9%B47%E6%9C%8820%E6%97%A5%E6%80%9D%E8%80%83%EF%BC%9A%E6%99%AE%E9%80%9A%E4%BA%BA/" title="2023年7月20日思考：普通人">2023年7月20日思考：普通人</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-20T05:36:46.000Z" title="发表于 2023-07-20 13:36:46">2023-07-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a></span></div><div class="content">这篇文章始于2023年7月20日
+​		我还是做一个普通人吧，对自己的要求不用那么高，要降低对自己的要求。因为对自己要求太高，很容易就会因为一点不顺就感到沮丧和挫败。
+​		今天早上我给我的GitHub博客网站添加搜索功能时，出了点问题：搜索功能在网页上的位置错位了，而且最后我也没弄得，这样不太好看。虽然搜索功能可以使用，但因为这个小问题让我产生了强烈的挫败感。究其原因还是对自己的要求太高了，太完美主义。
+​		还有，我们学校7月初就放假了，放假后我要求自己每天都必须学习大量的内容，把时间安排得满满的。虽然在这个过程中我学了很东西，但是也有很长时间是处于一种沮丧和挫败感的状态，因为稍有时间上的浪费和不能按照规划来完成学习任务，我就会产生强烈的挫败感，这种挫败感让我什么事情都不想做了。究其原因，我想还是对自己的要求太高了。
+​		所以，我觉得我还是做个普通人吧，对自己的要求低点。这样有时候反而是件好事，因为不会因为一点点小问题就产生挫败感。
+</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/07/20/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02023%E5%B9%B47%E6%9C%8820%E6%97%A5001/" title="英语学习笔记2023年7月20日001">英语学习笔记2023年7月20日001</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-19T16:19:13.000Z" title="发表于 2023-07-20 00:19:13">2023-07-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%8B%B1%E8%AF%AD/">英语</a></span></div><div class="content">The Dutch giant Elsevier, which claims to publish 25% of the scientific papers produced in the world, made profits of more than £900m last year, while UK universities alone spent more than £210m in 2016 to enable researchers to access their own publicly funded research.
+荷兰大型企业爱思唯尔声称发表了世界上25%的科学论文，去年盈利超过9亿英镑，而仅英国的大学在2016年就花费了超过2.1亿英镑，以便研究人员能够获取大学自身依靠公共资助的研究（数据）。
+
+Dutch：荷兰
+
+
+为什么用made profits of more than £900m，而不是made more than £900m profits？
+在这个句子中，使用”made profits of more than £900m”的表达方式更为常见和自然。 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/07/19/%E5%BE%AE%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%91%E5%B1%95/" title="微机操作系统的发展">微机操作系统的发展</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-19T13:31:07.000Z" title="发表于 2023-07-19 21:31:07">2023-07-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><div class="content">本文章始于2023年7月19日
+微机操作系统的定义配置在微型机上的操作系统称为微机操作系统
+单任务单用户操作系统​		一次只能有一个用户，且只能执行一个任务。用户不能同时运行多个程序或任务，当一个任务执行完成后，用户可以选择另一个任务来执行。
+​		这是最简单的微机操作系统。
+​		尽管这种类型的操作系统功能相对有限，但在一些简单的环境中仍然可以满足用户的需求。例如，一些嵌入式系统、个人计算机以及一些特定用途的设备可能会采用单用户单任务操作系统。
+​		这种操作系统最具代表性的是CP&#x2F;M和MS-DOS
+CP&#x2F;M​		CP&#x2F;M是由Digital Research公司于1975年开发的8位微机操作系统，在8位微机中占据了统治地位。
+
+
+
+
+MS-DOS​		MS-DOS在CP&#x2F;M的基础上有了较大的扩充，使其在功能上有很大的提高。MS-DOS在曾搭载在16位微机IBM-PC中。MS-DOS是事实上的16位单用户单任务操作系统标准。
+
+单用户多任务操作系统​		在单用户多任务操作系统中，只运行一个用户上机，用户可以同时运行多个程序或任务，并且这些任务可以 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/07/19/%E6%97%A0%E7%A9%B7%E5%B0%8F%E5%92%8C%E6%97%A0%E7%A9%B7%E5%A4%A7/" title="无穷小和无穷大">无穷小和无穷大</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-19T09:30:04.000Z" title="发表于 2023-07-19 17:30:04">2023-07-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a></span></div><div class="content">本文章始于2023年7月19日下午
+（一）无穷小1、无穷小的概念若函数$ f(x) $当$ x \rightarrow x_0 $(或$ x \rightarrow ∞) $时的极限为零，则称$ f(x) $为$ x \rightarrow x_0 $或$ x \rightarrow ∞ $时的无穷小量
+注：以0为极限的变量称为无穷小量；提到无穷小量，必须指明极限过程
+我感觉在无穷小量和无穷大量这部分内容中，无穷小量是重点，因为无穷小量的内容要比无穷大量多许多
+2、无穷小的性质（1）有限个无穷小的和仍是无穷小
+（2）有效个无穷小的积仍是无穷小
+（3）无穷小量与有界量的积仍是无穷小
+注：两个无穷小的商不一定是无穷小,有多种不同的情况
+$\displaystyle \lim_{x \to 0}{\frac{x^2}{3x}}&#x3D;0$，$\displaystyle \lim_{x \to 0}{\frac{3x}{x^2}}&#x3D;\infty$，$\displaystyle \lim_{x \to 0}{\frac{\sin x}{3x}}&#x3D;\frac{1}{3}$
+ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/07/19/Linux%E7%9A%84%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/" title="Linux的时间函数">Linux的时间函数</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-19T06:33:43.000Z" title="发表于 2023-07-19 14:33:43">2023-07-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Linux/">Linux</a></span></div><div class="content">本篇文章始于2023年7月19日下午
+time函数原型获取自 1970 年 1月 1 日早晨零点到现在的秒数，也叫做
+12#include&lt;time.h&gt;time_t time(time_t *timep);
+
+使用方法如果time函数的参数timep为NULL，那么time函数会返回自 1970 年 1月 1 日早晨零点到现在的秒数；
+1234567#include&lt;time.h&gt;#include&lt;stdio.h&gt;int main()&#123;    time_t tm;    tm=time(NULL);    printf(&quot;%d&quot;,tm);&#125;
+
+如果time函数的参数不为NULL，那么time函数会把自 1970 年 1月 1 日早晨零点到现在的秒数赋值给timep指向的time_t类型变量
+1234567#include&lt;time.h&gt;#include&lt;stdio.h&gt;int main()&#123;    time_t tm;    time(&amp;tm);    printf( ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/07/19/%E5%8D%B7%E9%A6%96%E8%AF%AD/" title="卷首语">卷首语</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-19T01:31:40.000Z" title="发表于 2023-07-19 09:31:40">2023-07-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a></span></div><div class="content">本博客创建于2023年7月19日上午，
+我是根据B站UP主DID迪的视频《[教程]Hexo &amp; Github搭建自己的专属博客》来搭建本博客的，
+本博客使用了Hexo的NexT主题，
+本博客的NexT主题的美化是根据B站UPMackxin的视频《[馨客栈分享]使用Hexo博客搭建的个人博客，使用Next主题来进行优化改造》来的
+
+视频链接
+【[教程]Hexo &amp; Github搭建自己的专属博客】 https://www.bilibili.com/video/BV1Eg41157tL/?share_source=copy_web&amp;vd_source=a588b30b1c8de1d716699b8ae558538f
+【[馨客栈分享]使用Hexo博客搭建的个人博客，使用Next主题来进行优化改造】 https://www.bilibili.com/video/BV16W411t7mq/?p=5&amp;share_source=copy_web&amp;vd_source=a588b30b1c8de1d716699b8ae558538f
+
+
+Hexo官网
+https: ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/07/19/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-18T22:59:40.544Z" title="发表于 2023-07-19 06:59:40">2023-07-19</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+
+More info: Writing
+Run server1$ hexo server
+
+More info: Server
+Generate static files1$ hexo generate
+
+More info: Generating
+Deploy to remote sites1$ hexo deploy
+
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">巨龙之路</div><div class="author-info__description">我认为写博客可以给个人、社会和世界带来价值</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/2023/07/20/2023%E5%B9%B47%E6%9C%8820%E6%97%A5%E6%80%9D%E8%80%83%EF%BC%9A%E6%99%AE%E9%80%9A%E4%BA%BA/" title="2023年7月20日思考：普通人">2023年7月20日思考：普通人</a><time datetime="2023-07-20T05:36:46.000Z" title="发表于 2023-07-20 13:36:46">2023-07-20</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2023/07/20/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02023%E5%B9%B47%E6%9C%8820%E6%97%A5001/" title="英语学习笔记2023年7月20日001">英语学习笔记2023年7月20日001</a><time datetime="2023-07-19T16:19:13.000Z" title="发表于 2023-07-20 00:19:13">2023-07-20</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2023/07/19/%E5%BE%AE%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%91%E5%B1%95/" title="微机操作系统的发展">微机操作系统的发展</a><time datetime="2023-07-19T13:31:07.000Z" title="发表于 2023-07-19 21:31:07">2023-07-19</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2023/07/19/%E6%97%A0%E7%A9%B7%E5%B0%8F%E5%92%8C%E6%97%A0%E7%A9%B7%E5%A4%A7/" title="无穷小和无穷大">无穷小和无穷大</a><time datetime="2023-07-19T09:30:04.000Z" title="发表于 2023-07-19 17:30:04">2023-07-19</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2023/07/19/Linux%E7%9A%84%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/" title="Linux的时间函数">Linux的时间函数</a><time datetime="2023-07-19T06:33:43.000Z" title="发表于 2023-07-19 14:33:43">2023-07-19</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"><span class="card-category-list-name">操作系统</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"><span class="card-category-list-name">未分类</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%8B%B1%E8%AF%AD/"><span class="card-category-list-name">英语</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/"><span class="card-category-list-name">高等数学</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 1.1em; color: #999">思考</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 1.1em; color: #999">操作系统</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 1.1em; color: #999">数学</a> <a href="/tags/Linux/" style="font-size: 1.1em; color: #999">Linux</a> <a href="/tags/%E8%8B%B1%E8%AF%AD/" style="font-size: 1.1em; color: #999">英语</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">七月 2023</span><span class="card-archive-list-count">7</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">7</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-08-09T10:20:15.145Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 巨龙之路</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
