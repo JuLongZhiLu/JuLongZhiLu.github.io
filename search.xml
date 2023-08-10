@@ -392,4 +392,23 @@
         <tag>英语</tag>
       </tags>
   </entry>
+  <entry>
+    <title>hexo上传图片</title>
+    <url>/2023/08/11/hexo%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<h3 id="法"><a href="#法" class="headerlink" title="法"></a>法</h3><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>安装一个插件hexo-asset-image</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+
+<p>然后在博客的source文件夹里面创建images文件夹，然后把图片放到images里面。为了更好的在images里面管理图片，可以用文章名在images创建文件夹，images里面的文件夹的名字可以有中文，但图片名可能是英文和数字比较好。</p>
+<p>在markdown里面相对引用source文件夹的images文件夹里面的图片</p>
+<p>大功告成</p>
+<p><img src="/../images/hexo%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/show.gif"></p>
+<h3 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h3><p><a href="https://hexo.io/zh-cn/docs/asset-folders.html">https://hexo.io/zh-cn/docs/asset-folders.html</a></p>
+<p><a href="https://github.com/xcodebuild/hexo-asset-image">https://github.com/xcodebuild/hexo-asset-image</a></p>
+<p>【Hexo 上传 “图片” 的方法(绝对好使)】 <a href="https://www.bilibili.com/video/BV1rM411c79A/?share_source=copy_web&vd_source=a588b30b1c8de1d716699b8ae558538f">https://www.bilibili.com/video/BV1rM411c79A/?share_source=copy_web&amp;vd_source=a588b30b1c8de1d716699b8ae558538f</a></p>
+<p>【解决Hexo博客图片无法显示】 <a href="https://www.bilibili.com/video/BV1D7411U7Yk/?share_source=copy_web&vd_source=a588b30b1c8de1d716699b8ae558538f">https://www.bilibili.com/video/BV1D7411U7Yk/?share_source=copy_web&amp;vd_source=a588b30b1c8de1d716699b8ae558538f</a></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
 </search>
