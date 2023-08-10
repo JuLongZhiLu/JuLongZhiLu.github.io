@@ -395,7 +395,7 @@
   <entry>
     <title>hexo上传图片</title>
     <url>/2023/08/11/hexo%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<h3 id="法"><a href="#法" class="headerlink" title="法"></a>法</h3><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>安装一个插件hexo-asset-image</p>
+    <content><![CDATA[<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>安装一个插件hexo-asset-image</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
 
 <p>然后在博客的source文件夹里面创建images文件夹，然后把图片放到images里面。为了更好的在images里面管理图片，可以用文章名在images创建文件夹，images里面的文件夹的名字可以有中文，但图片名可能是英文和数字比较好。</p>
